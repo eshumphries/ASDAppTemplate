@@ -23,7 +23,7 @@
             <!-- Contain the gameplay graphics in a Canvas for absolute positioning -->
             <Canvas x:Name="DisplayCanvas" Width="150" Height="150" Grid.Row="1">
             </Canvas>
-            <!-- Have three UI buttons spaced out right and name and describe them according to their hotkeys -->
+            <!-- Have three UI buttons aligned right and name and describe them according to their hotkeys -->
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="2">
                 <Button x:Name="AButton" Width="30" Height="30" Margin="30">
                     <Button.Content>

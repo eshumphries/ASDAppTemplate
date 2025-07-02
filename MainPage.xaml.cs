@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+// Add this to use ScaleTransform
 using Windows.UI.Xaml.Media;
 
 namespace ASDAppTemplate
