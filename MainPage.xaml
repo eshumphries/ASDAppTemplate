@@ -16,15 +16,18 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
-            <!-- Have a title at the top and center it -->
+            <!-- Center the content in every row -->
             <StackPanel HorizontalAlignment="Center" Grid.Row="0">
-                <TextBlock Text="Title" FontSize="30" FontStyle="Italic" FontWeight="Bold"/>
+                <!-- Put the title first and give it spacing-->
+                <TextBlock Text="Title" FontSize="30" FontStyle="Italic" FontWeight="Bold" Margin="15"/>
             </StackPanel>
-            <!-- Contain the gameplay graphics in a Canvas for absolute positioning -->
-            <Canvas x:Name="DisplayCanvas" Width="150" Height="150" Grid.Row="1">
-            </Canvas>
-            <!-- Have three UI buttons aligned right and name and describe them according to their hotkeys -->
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <!-- Contain the gameplay graphics in a Canvas for absolute positioning -->
+                <Canvas x:Name="DisplayCanvas" Width="150" Height="150" Grid.Row="1">
+                </Canvas>
+            </StackPanel>
             <StackPanel HorizontalAlignment="Center" Orientation="Horizontal" Grid.Row="2">
+                <!-- Have three UI buttons spaced right and name and describe them according to their hotkeys -->
                 <Button x:Name="AButton" Width="30" Height="30" Margin="30">
                     <Button.Content>
                         <Canvas Width="30" Height="30">
